@@ -1,0 +1,136 @@
+.cards{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.card{
+	border: none;
+	margin: 0 0 15px;
+
+	&.background-dark{
+		background-color: rgba(19, 19, 22, 0.0);
+
+		.card-header{
+			background-color: inherit;
+		}
+	}
+}
+
+.card-header{
+	margin: 0 0 25px;
+	padding: 0;
+	background-color: $white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: none;
+}
+
+.card-icon{
+
+	a{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 106px;
+		height: 106px;
+		background-color: $yellow-primary;
+		border-radius: 53px;
+
+		.icon-service{
+			fill: $white;
+		}
+
+		&:hover{
+			background-color: $white;
+			border: 1px solid $dark-secondary-color;
+
+			.icon-service{
+				fill: $yellow-primary;
+			}
+		}
+	}
+}
+
+.card-title{
+	margin: 0 0 25px;
+}
+
+.card-description{
+	text-align: center;
+}
+
+.icon-detail{
+	fill: $yellow-primary;
+}
+
+.card-meta{
+	padding: 35px 0;
+	border: 1px solid $yellow-primary;
+	border-radius: 0;
+
+	.card-header{
+		margin: 0 0 15px;
+	}
+
+	.card-body{
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.text-description{
+	color: $yellow-primary;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.cards-inner{
+	padding: 50px 0 0;
+}
+
+.card-item{
+	flex-direction: row;
+}
+
+.card-right{
+	margin: 0px 30px 0 0;
+
+	.card-icon{
+		width: 70px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 35px;
+		background-color: $yellow-primary;
+	}
+}
+
+.card-left {
+
+	.card-title{
+		margin: 0 0 15px;
+	}
+
+	.card-description {
+		text-align: left;
+	}
+}
+
+.cards-contacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	.card-body {
+		padding: 0;
+	}
+
+	.card-info {
+		color: $darken;
+		font-size: 20px;
+	}
+}

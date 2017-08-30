@@ -1,0 +1,257 @@
+.thumbnail-grid{
+  margin: 0 -15px;
+}
+
+.og-grid {
+  list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+
+  li {
+    display: inline-block;
+	  margin: 10px 5px 0 5px;
+	  vertical-align: top;
+	  height: 250px;
+
+    &.og-expanded > a::after {
+      top: auto;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-bottom-color: #ddd;
+      border-width: 15px;
+      left: 50%;
+      margin: -20px 0 0 -15px;
+    }
+  }
+}
+
+
+.og-grid li > a,
+.og-grid li > a img {
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+.og-expander {
+    position: absolute;
+    background: #ddd;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+}
+
+.og-expander-inner {
+    padding: 50px 30px;
+    height: 100%;
+}
+
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: 1px;
+    background: #888;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background: #333;
+  }
+}
+
+.og-fullimg,
+.og-details {
+    width: 50%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.og-details{
+
+  h3 {
+    font-weight: 300;
+    font-size: 52px;
+    padding: 40px 0 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 3px solid #333;
+    display: inline-block;
+    margin: 30px 0 0;
+    outline: none;
+
+    &::before {
+      content: '\2192';
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      border-color: #999;
+      color: #999;
+    }
+  }
+}
+
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+// cuspom style
+// section works
+
+.og-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  li {
+    width: 16.66666666666667%;
+    margin: 0;
+
+    &.og-expanded > a::after {
+      display: none;
+    }
+  }
+}
+
+.og-grid li > a img{
+    width: auto;
+    height: 100%;
+}
+
+.og-expander {
+    background: $white;
+    right: 0;
+}
+
+.og-expander-inner {
+    padding: 0;
+    display: flex;
+}
+
+.og-close {
+  width: 14px;
+  height: 14px;
+
+  &::before,
+  &::after {
+    height: 2px;
+    background: $yellow-primary;
+    z-index: 1;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background: $dark-secondary-color;
+  }
+}
+
+.og-fullimg {
+  width: 85%;
+  margin: 0 30px 0 0;
+}
+
+.og-details{
+  margin: 0 68px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: $darken;
+    text-align: left;
+  }
+
+  p {
+    font-weight: 300;
+    color: $body-color;
+  }
+
+  a {
+    padding: 20px 50px;
+    width: 175px;
+    font-size: 20px;
+    border: none;
+    background-color: $yellow-primary;
+    color: $white;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    text-decoration: none;
+
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: rgba(255, 230, 0, .75);
+    }
+  }
+}

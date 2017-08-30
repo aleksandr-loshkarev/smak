@@ -1,0 +1,64 @@
+.button{
+	text-align: center;
+}
+
+.btn{
+	padding: 20px 50px;
+	font-size: 20px;
+	line-height: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.btn-primary{
+	color: $dark-secondary-color;
+	border: none;
+
+	&:hover{
+		color: $dark-secondary-color;
+		opacity: .5;
+	}
+}
+
+.btn-capitalize {
+	color: $white;
+	text-transform: capitalize;
+}
+
+.rewind-arrow{
+	padding: 20px;
+
+	.arrow-down{
+		fill: $white;
+		width: 18px;
+		height: 18px;
+	}
+}
+
+.btn-inverse{
+	color: $white;
+	font-size: 15px;
+
+	&:hover{
+		opacity: 1;
+		color: $white;
+	}
+}
+
+.up-arrow{
+	transform: rotate(180deg);
+}
+
+.small-text{
+	font-size: 15px;
+
+	.btn{
+		font-size: inherit;
+	}
+}
+
+.btn-left{
+	text-align: left;
+}

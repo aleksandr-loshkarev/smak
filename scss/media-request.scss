@@ -1,0 +1,196 @@
+@media screen and (max-width: 1024px) {
+	.thumbnail-grid{
+		.og-grid {
+
+	  	li {
+	    	width: 25%;
+	  	}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+
+	.navbar-dark {
+		.navbar-nav {
+			margin: 0;
+
+			.nav-item {
+				padding: 0;
+			}
+		}
+	}
+
+	.navbar-nav {
+		padding: 10px;
+		align-items: center;
+
+		.nav-item.nav-decor {
+			margin: 10px;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.navbar-collapse {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background-color: #112a2f;
+		z-index: 1000;
+	}
+
+	h1 {
+		font-size: 6vw;
+	}
+}
+
+@media screen and (max-width: 830px) {
+
+	.og-expander{
+
+		h3{
+			font-size: 32px;
+		}
+
+		p {
+			font-size: 13px;
+		}
+
+		a {
+			font-size: 12px;
+		}
+	}
+
+	.thumbnail-grid{
+		.og-grid {
+
+	  	li {
+	    	width: 33.33%;
+	  	}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.branding-box {
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	h1 {
+		font-size: 5.5vw;
+	}
+
+	.button {
+		.btn {
+			padding: 15px 40px;
+			font-size: 16px;
+		}
+		.rewind-arrow {
+			padding: 20px;
+		}
+	}
+
+	.cards-contacts {
+		flex-direction: column;
+	}
+
+	.thumbnail-grid {
+		.og-grid {
+
+	  	li {
+	    	width: 50%;
+
+				> a img {
+					width: 100%;
+				}
+	  	}
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.og-fullimg {
+		display: none;
+	}
+
+	.og-details {
+		float: none;
+		width: 100%;
+	}
+
+	.thumbnail-grid {
+		.og-grid {
+
+	  	li {
+	    	width: 100%;
+	  	}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	h1 {
+		font-size: 7vw;
+	}
+
+	.carousel-brand {
+		height: 130px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+
+	.header-block {
+		padding: 5px 0;
+	}
+
+	.navbar {
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		top: 45px;
+	}
+
+	.branding-box {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.button {
+		.btn {
+			padding: 15px 20px;
+			font-size: 14px;
+		}
+	}
+
+	.thumbnail-grid{
+		.og-grid {
+
+	  	li {
+	    	width: 100%;
+	  	}
+		}
+	}
+}
+
+@media screen and (max-width: 381px) {
+
+			.carousel-brand {
+				height: 112px;
+			}
+}
+
+@media screen and (max-width: 330px) {
+
+			.carousel-brand {
+				height: 105px;
+			}
+}

@@ -1,0 +1,24 @@
+.form-control {
+  padding: 20px;
+  font-size: 15px;
+  line-height: inherit;
+  color: $white;
+  background-color: #131a1d;
+  border: 1px solid $white;
+  border-radius: 0;
+
+  &:focus {
+    color: $white;
+    background-color: inherit;
+    border-color: $white;
+  }
+}
+
+.form-row {
+  margin: 0 -15px;
+
+  > .col,
+  > [class*="col-"] {
+    padding: 0 15px 15px;
+  }
+}

@@ -1,0 +1,51 @@
+$yellow-primary: #ffe600;
+$dark-secondary-color: #131316;
+$darken: #515151;
+
+$theme-colors: (
+  primary: $yellow-primary,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
+$body-color: #707070;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1230px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+$font-family-base: 'Oswald', $font-family-sans-serif;
+
+$font-weight-base: 300;
+$font-weight-bold: 700;
+
+$h1-font-size: 65px;
+$h2-font-size: 30px;
+$h3-font-size: 20px;
+$h4-font-size: 40px;
+$h5-font-size: 16px;
+$h6-font-size: 20px;
+
+$input-placeholder-color: $white;
+$carousel-control-color: $darken;
+$carousel-control-width: 10px;
+
+$carousel-indicator-width: 5px;
+$carousel-indicator-height: 5px;
+$carousel-indicator-active-bg: $yellow-primary;
