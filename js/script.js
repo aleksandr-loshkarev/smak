@@ -26,6 +26,7 @@ function circlePortfolioInit(){
 $(window).on('scroll', function() {
   if(isScrolledIntoView('.circle-portfolio')){
     circlePortfolioInit();
+    $(window).off('scroll');
   }
 });
 
@@ -67,6 +68,7 @@ function circleInit(){
 $(window).on('scroll', function() {
   if(isScrolledIntoView('.circle')){
     circleInit();
+    $(window).off('scroll');
   }
 });
 
