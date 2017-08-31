@@ -7386,6 +7386,13 @@ a {
 .section.padding-bottom-none {
   padding-bottom: 0; }
 
+.inner {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
 .section {
   padding: 60px 0 65px; }
 

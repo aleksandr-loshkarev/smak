@@ -241,3 +241,9 @@ a {
 .section.padding-bottom-none {
   padding-bottom: 0;
 }
+
+.inner {
+  -webkit-box-flex: 0;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
