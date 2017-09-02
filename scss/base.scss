@@ -160,10 +160,6 @@ a {
     text-align: center;
 }
 
-.background-dark{
-    background-color: #131a1d;
-}
-
 .medium-bg {
     background-color: #fbfbfb;
 
@@ -184,7 +180,6 @@ a {
 }
 
 .copyright {
-  color: $white;
 
   .copyright-link {
     color: $yellow-primary;
@@ -203,7 +198,6 @@ a {
 }
 
 .social-link {
-  color: $white;
 
   .social-icon {
     fill: $white;
@@ -228,13 +222,11 @@ a {
   margin: 0 0 25px;
   padding: 0 0 25px;
   font-size: 20px;
-  color: $white;
   font-weight: 400;
   position: relative;
 }
 
 .autor-quote {
-  color: $white;
   font-weight: 400;
 }
 
@@ -246,4 +238,46 @@ a {
   -webkit-box-flex: 0;
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+.section {
+  .padding-zero {
+    padding: 0;
+  }
+}
+
+.inverse {
+
+  .heading-body {
+    padding: 0;
+  }
+
+  h2 {
+    color: $yellow-primary;
+  }
+
+  h3,
+  p,
+  span,
+  .form-control {
+    color: $white;
+  }
+
+  .form-control {
+    border-color: $white;
+    background-color: #131a1d;
+
+    &:focus {
+      background-color: inherit;
+      border-color: $yellow-primary;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
+
+.bg-darken {
+  background-color: $dark-secondary-color;
 }

@@ -37,18 +37,9 @@
 	}
 }
 
-.circle-portfolio {
-
-	canvas {
-		display: none;
-	}
-
-	.head-circle {
-		margin: 0 0 10px;
-		position: static;
-		font-size: 40px;
-		line-height: 1em;
-		color: $white;
-		font-weight: 700;
-	}
+.portfolio {
+	margin: 0 0 10px;
+	font-size: 40px;
+	line-height: 1em;
+	font-weight: 700;
 }

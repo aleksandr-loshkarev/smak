@@ -10,7 +10,7 @@ $theme-colors: (
   warning: $yellow,
   danger: $red,
   light: $gray-100,
-  dark: $gray-800
+  dark: #131a1d
 );
 
 $body-color: #707070;
@@ -42,7 +42,7 @@ $h4-font-size: 40px;
 $h5-font-size: 16px;
 $h6-font-size: 20px;
 
-$input-placeholder-color: $white;
+$input-placeholder-color: $darken;
 $carousel-control-color: $darken;
 $carousel-control-width: 10px;
 
