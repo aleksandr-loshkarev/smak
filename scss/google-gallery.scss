@@ -87,6 +87,20 @@
   &:hover::after {
     background: #333;
   }
+
+  &.inverse {
+    &::before,
+    &::after {
+      background-color: $white;
+      left: 0;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $white;
+      opacity: .5;
+    }
+  }
 }
 
 .og-fullimg,
@@ -167,6 +181,7 @@
 
   li {
     width: 16.66666666666667%;
+    height: auto;
     margin: 0;
 
     &.og-expanded > a::after {
@@ -176,8 +191,8 @@
 }
 
 .og-grid li > a img{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .og-expander {

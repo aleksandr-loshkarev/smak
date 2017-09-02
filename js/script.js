@@ -1,3 +1,19 @@
+function toggler() {
+		$('[data-toggler]').on('click', function(e) {
+    	e.preventDefault();
+    	var $this = $(this);
+      var hash = $this.attr('href') || $this.data('target');
+      if (!hash) return false;
+      $this.toggleClass('is-active');
+      $(hash).toggleClass('active');
+    })
+}
+
+toggler();
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 // ThumbnailGridExpandingPreview
 
 $(function() {

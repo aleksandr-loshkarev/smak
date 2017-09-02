@@ -2999,7 +2999,11 @@ tbody.collapse.show {
   height: 37px; }
 
 .holder-team {
-  padding: 65px 0 40px; }
+  padding: 65px 0 40px;
+  position: relative; }
+
+.tab-team {
+  width: 25%; }
 
 .navbar {
   position: relative;
@@ -7589,15 +7593,23 @@ button:focus {
   .thumbnail-grid .og-grid li {
     width: 50%; }
     .thumbnail-grid .og-grid li > a img {
-      width: 100%; } }
+      width: 100%; }
+  .og-expander-inner .og-fullimg {
+    display: none; }
+  .og-expander-inner .og-details {
+    width: 100%; }
+  .nav-team-inner .nav-tab-header {
+    display: none; }
+  .nav-team-inner .nav-tab-autor p {
+    font-size: 14px; }
+  .nav-team-inner .nav-tab-profession p {
+    font-size: 12px; } }
 
 @media screen and (max-width: 650px) {
   .og-fullimg {
     display: none; }
   .og-details {
     float: none;
-    width: 100%; }
-  .thumbnail-grid .og-grid li {
     width: 100%; } }
 
 @media screen and (max-width: 576px) {
@@ -7679,6 +7691,14 @@ button:focus {
 
 .btn-left {
   text-align: left; }
+
+.close-tab-panel {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  cursor: pointer; }
+  .close-tab-panel .og-close {
+    top: 0; }
 
 .cards {
   display: -webkit-box;
@@ -7894,6 +7914,12 @@ button:focus {
     transform: rotate(-45deg); }
   .og-close:hover::before, .og-close:hover::after {
     background: #333; }
+  .og-close.inverse::before, .og-close.inverse::after {
+    background-color: #fff;
+    left: 0; }
+  .og-close.inverse:hover::before, .og-close.inverse:hover::after {
+    background-color: #fff;
+    opacity: .5; }
 
 .og-fullimg,
 .og-details {
@@ -7983,13 +8009,14 @@ button:focus {
   padding: 0; }
   .og-grid li {
     width: 16.66666666666667%;
+    height: auto;
     margin: 0; }
     .og-grid li.og-expanded > a::after {
       display: none; }
 
 .og-grid li > a img {
-  width: auto;
-  height: 100%; }
+  width: 100%;
+  height: auto; }
 
 .og-expander {
   background: #fff;
